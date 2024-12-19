@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Заголовок рецепта -->
+            <TextView
+                android:id="@+id/recipeTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название рецепта"
+                android:textSize="24sp"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold" />
+
+            <!-- Ингредиенты рецепта -->
+            <TextView
+                android:id="@+id/recipeIngredientsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ингредиенты"
+                android:textSize="18sp"
+                android:textColor="@color/textSecondaryColor"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif" />
+
+            <!-- Описание рецепта -->
+            <TextView
+                android:id="@+id/recipeDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание"
+                android:textSize="16sp"
+                android:textColor="@color/textSecondaryColor"
+                android:lineSpacingExtra="6dp"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Кнопка "Удалить" с полной шириной -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:backgroundTint="#d6ccc2"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:layout_margin="16dp" />
+
+    <!-- Кнопка "Назад" с полной шириной -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

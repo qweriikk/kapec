@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <!-- Название рецепта -->
+    <TextView
+        android:id="@+id/recipeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Название рецепта"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimaryColor"
+        android:fontFamily="sans-serif-medium"
+        android:paddingEnd="8dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Кнопка для просмотра рецепта -->
+    <Button
+        android:id="@+id/viewRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подробнее"
+        android:backgroundTint="@color/buttonBackgroundColor"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="2dp" />
+</LinearLayout>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center">
+
+    <!-- Заголовок экрана -->
+    <TextView
+        android:id="@+id/registerTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textSize="24sp"
+        android:textColor="@color/textPrimaryColor"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold" />
+
+    <!-- Поля для регистрации -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="16sp" />
+
+    <!-- Кнопка для регистрации -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:backgroundTint="#d6ccc2"
+        android:textColor="@android:color/white"
+        android:paddingVertical="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp" />
+
+    <!-- Ссылка для перехода на экран авторизации -->
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт? Войти"
+        android:textColor="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+
